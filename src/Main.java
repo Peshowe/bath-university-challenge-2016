@@ -26,17 +26,17 @@ System.out.println("Select an option: \n 1. Edit a web page \n 2. Editting repor
 			int answer = input.chooseEdit();
 			if(answer == 1){
 				 report.append(url + " | ");
-				 report.append("title +  | ");
+				 report.append("title | ");
 				 report.append(reader.editPage("title")+" | ");
 				 report.append(input.getNewValue());
 			}else if(answer == 2){
 				 report.append(url + " | ");
-				 report.append("description +  | ");
+				 report.append("description | ");
 				 report.append(reader.editPage("description")+" | ");
 				 report.append(input.getNewValue());
 			}else if(answer == 3){
 				 report.append(url + " | ");
-				 report.append("keywords +  | ");
+				 report.append("keywords | ");
 				 report.append(reader.editPage("keywords")+" | ");
 				 report.append(input.getNewValue());
 			}
